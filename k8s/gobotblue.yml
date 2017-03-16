@@ -20,7 +20,7 @@ spec:
         color: blue
     spec:
       containers:
-      - image: takuyak/gobotblue:v2
+      - image: tbuchi888/gobotblue:v1
         name: blue
         ports:
           - containerPort: 3000
