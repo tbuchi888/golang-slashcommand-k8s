@@ -1,5 +1,7 @@
 # golang-slashcommand-k8s
-This is BOT by gollang for slash command of mattermost and Slack. And Dockerfile,k8s files.
+This is BOT by gollang for slash command of mattermost and Slack. 
+And run on Docker and k8s. 
+But these are still being verified.
 
 ## Usage
 
