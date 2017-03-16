@@ -33,7 +33,7 @@ When you get slash command token , you need to change GOBOTTOKEN(yourtoken) on k
 Example of After that.
 
 ```
-kubectl edit deployment 
+kubectl edit deployment gobotblue
 ```
 ## on Docker
 
