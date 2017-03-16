@@ -1,0 +1,29 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: gobotblue
+  labels:
+    name: app
+    app: gobot
+    color: blue
+spec:
+  minReadySeconds: 30
+  strategy:
+    type: RollingUpdate
+  replicas: 4
+  template:
+    metadata:
+      name: gobotblue
+      labels:
+        name: app
+        app: gobot
+        color: blue
+    spec:
+      containers:
+      - image: takuyak/gobotblue:v2
+        name: blue
+        ports:
+          - containerPort: 3000
+        env:
+          - name: GOBOTTOKEN
+            value: Your_slashcommand_token
