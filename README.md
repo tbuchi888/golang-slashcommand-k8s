@@ -1,6 +1,8 @@
 # golang-slashcommand-k8s
-This is BOT by gollang for slash command of mattermost and Slack. 
-And run on Docker and k8s. 
+This BOT made by gollang for slash command of mattermost and Slack. 
+
+And it run on Docker and k8s. 
+
 But these are still being verified.
 
 ## Usage
@@ -34,5 +36,7 @@ minikube service gobotsv --url
 
 ## Thanks
 https://docs.mattermost.com/developer/slash-commands.html
+
 https://github.com/favclip/ucon
+
 https://developers.eure.jp/tech/gae-slashcommands-example/
