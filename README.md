@@ -39,13 +39,13 @@ kubectl edit deployment gobotblue
 
 ```
 docker build -t tbuchi888/gobotblue:v1 ./ --force-rm=true
-docker run --name golang-bot -d -p 3000:3000 tbuchi888/gobotblue:v1 -e GOBOTTOKEN=your_token
+docker run --name golang-bot -d -p 3000:3000 -e GOBOTTOKEN=Your_slashcommand_token tbuchi888/gobotblue:v1
 ```
 
 ## golang
 
 ```
-export GOBOTTOKEN="your_token"
+export GOBOTTOKEN="Your_slashcommand_token"
 go get -u github.com/favclip/ucon
 go install main
 ./main
