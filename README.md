@@ -1,12 +1,16 @@
 # golang-slashcommand-k8s
-This BOT made by gollang for slash command of mattermost and Slack. 
-And it run on Docker and k8s. 
+- This BOT made by gollang for slash command of mattermost and Slack. And it run on Docker and k8s. 
+- But these are still being verified.
+- This is Sample program.
 
-But these are still being verified.
-This is Sample program.
+## before that
+- You need to set up for slash command of mattermost or Slack. 
+- And, When you get slash command token , you need to change or Set Env GOBOTTOKEN(Your_slashcommand_token).
+  - k8s: k8s/gobotblue.yml or edit deployment,
+  - Docker: docker run -e option
+  - golang: export
 
-## Usage
-
+## Usage example
 ### on k8s / minikube
 
 ```
@@ -28,9 +32,7 @@ kubectl create -f k8s/mattermost.yml
 minikube service mattermostsv --url
 ```
 
-When you get slash command token , you need to change GOBOTTOKEN(yourtoken) on k8s/gobotblue.yml or edit deployment.
-
-Example of After that.
+When you get slash command token , you need to change GOBOTTOKEN(Your_slashcommand_token) on k8s/gobotblue.yml or edit deployment.
 
 ```
 kubectl edit deployment gobotblue
