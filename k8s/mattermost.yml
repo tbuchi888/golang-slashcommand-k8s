@@ -31,7 +31,7 @@ spec:
   replicas: 1
   template:
     metadata:
-      name: mattermosttmp
+      name: mattermostdep
       labels:
         name: app
         app: mattermost
@@ -39,6 +39,6 @@ spec:
     spec:
       containers:
       - image: mattermost/mattermost-preview:latest 
-        name: blue
+        name: mattermost
         ports:
           - containerPort: 8065
