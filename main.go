@@ -25,7 +25,7 @@ func main() {
                     w.WriteHeader(http.StatusBadRequest)
                     return
                 }
-                if os.Getenv("GOBOTTOKEN") != r.PostFormValue("token"){
+                if r.PostFormValue("token") != os.Getenv("GOBOTTOKEN") {
                     w.WriteHeader(http.StatusUnauthorized)
                     return
                 }
